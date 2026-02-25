@@ -1,2 +1,2 @@
 
-An edge server.
+This is MyEdgeServer.
