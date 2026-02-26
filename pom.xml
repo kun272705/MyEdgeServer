@@ -3,12 +3,4 @@
   <groupId>com.mycompany</groupId>
   <artifactId>myedgeserver</artifactId>
   <version>1.0.0</version>
-  <dependencies>
-    <dependency>
-      <groupId>com.kun272705</groupId>
-      <artifactId>webserver</artifactId>
-      <version>1.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-  </dependencies>
 </project>
