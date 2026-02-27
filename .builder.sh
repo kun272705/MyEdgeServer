@@ -16,7 +16,13 @@ build_jar() {
 
     mkdir -p "${outdir}classes/"
 
-    javac -cp "java_packages/*" "${input/%Handler.java/*.java}" -d "${outdir}classes/"
+    if [[ "${MODE:-production}" == development ]]; then
+
+      javac -cp "java_packages/*" "${input/%Handler.java/*.java}" -d "${outdir}classes/" -g
+    else
+
+      javac -cp "java_packages/*" "${input/%Handler.java/*.java}" -d "${outdir}classes/"
+    fi
 
     local args=("-C" "${outdir}classes/" "./")
 
